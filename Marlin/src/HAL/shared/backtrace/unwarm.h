@@ -6,7 +6,7 @@
  * for free and use it as they wish, with or without modifications, and in
  * any context, commerically or otherwise. The only limitation is that I
  * don't guarantee that the software is fit for any purpose or accept any
- * liablity for it's use or misuse - this software is without warranty.
+ * liability for its use or misuse - this software is without warranty.
  ***************************************************************************
  * File Description: Internal interface between the ARM unwinding sub-modules.
  **************************************************************************/
@@ -103,7 +103,7 @@ typedef struct {
  *  Macros
  **************************************************************************/
 
-#define M_IsOriginValid(v) (((v) & 0x7F) ? true : false)
+#define M_IsOriginValid(v) !!((v) & 0x7F)
 #define M_Origin2Str(v)    ((v) ? "VALID" : "INVALID")
 
 #ifdef UNW_DEBUG
