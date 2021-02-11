@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "Creality/Ender-3/BigTreeTech SKR 1.4 Turbo/Single Extruder"
+// #define CONFIG_EXAMPLES_DIR "Creality/Ender-5/BigTreeTech SKR 1.4 Turbo/Dual Extruder"
 
 /**
  * Custom Boot Screen bitmap
