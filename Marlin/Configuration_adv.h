@@ -517,7 +517,7 @@
  */
 #define CASE_LIGHT_ENABLE
 #if ENABLED(CASE_LIGHT_ENABLE)
-  #undef FAN1_PIN
+  #define FAN1_PIN -1 // ^RP: Disable Fan 2 control as we want to use the Fan2 pin (which is second heater) for the case light
   #define CASE_LIGHT_PIN P2_04                  // Override the default pin if needed
   #define INVERT_CASE_LIGHT false             // Set true if Case Light is ON when pin is LOW
   #define CASE_LIGHT_DEFAULT_ON true          // Set default power-up state on
